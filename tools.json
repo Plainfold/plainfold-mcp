@@ -1,0 +1,141 @@
+{
+  "brand": {
+    "name": "Plainfold",
+    "tagline": "Small, honest data tools for people and AI agents.",
+    "site": "https://plainfold.github.io",
+    "github": "https://github.com/plainfold",
+    "repo": "https://github.com/plainfold/plainfold-mcp",
+    "apifyProfile": "https://apify.com/plainfold",
+    "x": "https://x.com/plainfoldco",
+    "registryNamespace": "io.github.plainfold",
+    "combined": {
+      "slug": "plainfold-mcp",
+      "title": "Plainfold data tools (all tools)",
+      "description": "Plainfold's data tools in one MCP server: SAM.gov federal contracts and US business entity checks.",
+      "version": "1.0.0"
+    },
+    "repoId": "1409871838"
+  },
+  "tools": [
+    {
+      "slug": "sam-gov-contract-opportunities",
+      "live": true,
+      "name": "SAM.gov Contract Opportunities",
+      "title": "SAM.gov Contract Opportunities: Federal Bids & Awards",
+      "version": "0.2.2",
+      "registryDescription": "Search U.S. federal contract opportunities (RFPs, bids, awards) from SAM.gov official data.",
+      "summary": "Search and monitor U.S. federal contract opportunities from SAM.gov's official daily data extract: RFPs, solicitations, sources sought and award notices.",
+      "does": [
+        "Returns federal contract opportunities as clean JSON, one row per notice, from SAM.gov's official nightly public extract (not scraped).",
+        "Filters by keyword, NAICS, PSC, set-aside (small business, 8(a), HUBZone, SDVOSB, WOSB), agency, state, posted date and deadline.",
+        "Keyword search is relevance-ranked and ignores the FAR/DFARS boilerplate that every defense notice repeats.",
+        "Can run on a schedule and return only notices that are new since the last run."
+      ],
+      "useFor": "Finding federal contracts to bid on, daily bid alerts, market research by NAICS/PSC code, and award notices (who won what, for how much).",
+      "notFor": "State and local bids, non-U.S. tenders, attachment downloads, or historical spending data (use USAspending.gov).",
+      "price": "$0.002 per opportunity returned + $0.002 per run (about $0.20 per 100 results). No SAM.gov API key needed.",
+      "priceShort": "$0.002 per result + $0.002 per run",
+      "priceOffers": [
+        {
+          "name": "Per opportunity returned",
+          "price": "0.002"
+        },
+        {
+          "name": "Per run",
+          "price": "0.002"
+        }
+      ],
+      "exampleInput": {
+        "keywords": [
+          "cybersecurity"
+        ],
+        "setAsides": [
+          "SBA"
+        ],
+        "onlyOpenForResponses": true,
+        "sortBy": "deadlineAsc",
+        "maxResults": 10
+      },
+      "examplePrompt": "Find open small-business cybersecurity contracts on SAM.gov with the soonest deadlines.",
+      "keywords": [
+        "government contracts",
+        "SAM.gov",
+        "federal RFPs",
+        "bids",
+        "procurement",
+        "NAICS",
+        "set-asides"
+      ]
+    },
+    {
+      "slug": "business-entity-check",
+      "live": true,
+      "name": "US Business Entity Check",
+      "title": "US Business Entity Check: Verify a Company Is Real & Active",
+      "version": "0.1.3",
+      "registryDescription": "Verify a US company is registered and active from official state registry open data.",
+      "summary": "Check whether a US company is registered and active, using official state business-registry open data (New York, Colorado, Oregon, Connecticut, Texas).",
+      "does": [
+        "Give it company names; for each one it returns a verdict (active, inactive, status unclear, not found) and the matching registrations.",
+        "Each registration includes legal name, registry ID, entity type, status, good standing, jurisdiction, formation date and business address.",
+        "Company records only: it never returns officers, agents, owners or any other personal data.",
+        "Handles suffix and punctuation differences (Inc vs Inc., L.L.C. vs LLC) and lists similar names separately."
+      ],
+      "useFor": "Vendor and supplier checks before paying, KYB onboarding, lead qualification, and confirming that a company named in a contract, invoice or email actually exists.",
+      "notFor": "People lookups, states other than NY/CO/OR/CT/TX, credit or financial data, or a legal certificate of good standing.",
+      "price": "$0.004 per company found, $0.0005 per lookup with no match, + $0.0005 per run. Failed lookups are not charged.",
+      "priceShort": "$0.004 per company found, $0.0005 per no-match",
+      "priceOffers": [
+        {
+          "name": "Per company found",
+          "price": "0.004"
+        },
+        {
+          "name": "Per lookup with no match",
+          "price": "0.0005"
+        },
+        {
+          "name": "Per run",
+          "price": "0.0005"
+        }
+      ],
+      "exampleInput": {
+        "companies": [
+          "Arrow Electronics, Inc.",
+          "Kodak Alaris LLC"
+        ]
+      },
+      "examplePrompt": "Is Arrow Electronics, Inc. a real, active registered company? Which states is it registered in?",
+      "keywords": [
+        "business verification",
+        "KYB",
+        "company lookup",
+        "secretary of state",
+        "vendor check",
+        "entity status"
+      ]
+    },
+    {
+      "slug": "company-hiring-signals",
+      "live": false,
+      "name": "Company Jobs & Hiring Signals",
+      "summary": "Open roles from a company's careers page in one clean format, plus a hiring summary.",
+      "note": "In development. Set live=true and fill in the remaining fields when it is published on Apify."
+    },
+    {
+      "slug": "sec-company-financials",
+      "live": false,
+      "name": "SEC Company Financials",
+      "summary": "Clean annual and quarterly financials for any SEC filer from official EDGAR XBRL data.",
+      "note": "In development. Set live=true and fill in the remaining fields when it is published on Apify."
+    }
+  ],
+  "products": [
+    {
+      "name": "Spain Arrival Kit: Your First 90 Days in Spain",
+      "url": "https://plainfold.gumroad.com/l/hvrxff",
+      "price": "27",
+      "summary": "A calm, step-by-step guide to the NIE, padrón, TIE, bank account, Social Security, autónomo and the Beckham regime, for digital nomad, non-lucrative and student visa holders. 30-page PDF guide plus Notion and Excel trackers, with every rule linked to its official Spanish government source."
+    }
+  ]
+}

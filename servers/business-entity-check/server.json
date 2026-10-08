@@ -1,0 +1,37 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.plainfold/business-entity-check",
+  "title": "US Business Entity Check",
+  "description": "Verify a US company is registered and active from official state registry open data.",
+  "version": "0.1.3",
+  "websiteUrl": "https://apify.com/plainfold/business-entity-check",
+  "repository": {
+    "url": "https://github.com/plainfold/plainfold-mcp",
+    "source": "github",
+    "id": "1409871838",
+    "subfolder": "servers/business-entity-check"
+  },
+  "icons": [
+    {
+      "src": "https://plainfold.github.io/assets/plainfold-icon-512.png",
+      "mimeType": "image/png",
+      "sizes": [
+        "512x512"
+      ]
+    }
+  ],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.apify.com/?tools=plainfold/business-entity-check",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "Apify API token as 'Bearer <token>' (free account at apify.com). Optional if your MCP client supports OAuth sign-in.",
+          "isRequired": false,
+          "isSecret": true
+        }
+      ]
+    }
+  ]
+}

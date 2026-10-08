@@ -1,0 +1,36 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.plainfold/plainfold-mcp",
+  "title": "Plainfold data tools (all tools)",
+  "description": "Plainfold's data tools in one MCP server: SAM.gov federal contracts and US business entity checks.",
+  "version": "1.0.0",
+  "websiteUrl": "https://plainfold.github.io",
+  "repository": {
+    "url": "https://github.com/plainfold/plainfold-mcp",
+    "source": "github",
+    "id": "1409871838"
+  },
+  "icons": [
+    {
+      "src": "https://plainfold.github.io/assets/plainfold-icon-512.png",
+      "mimeType": "image/png",
+      "sizes": [
+        "512x512"
+      ]
+    }
+  ],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.apify.com/?tools=plainfold/sam-gov-contract-opportunities,plainfold/business-entity-check",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "Apify API token as 'Bearer <token>' (free account at apify.com). Optional if your MCP client supports OAuth sign-in.",
+          "isRequired": false,
+          "isSecret": true
+        }
+      ]
+    }
+  ]
+}
