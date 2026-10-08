@@ -1,14 +1,15 @@
 {
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
-  "name": "io.github.Plainfold/plainfold-mcp",
-  "title": "Plainfold data tools (all tools)",
-  "description": "Plainfold data tools: SAM.gov contracts, business entity checks, hiring signals, SEC financials.",
-  "version": "1.1.0",
-  "websiteUrl": "https://plainfold.github.io",
+  "name": "io.github.Plainfold/company-hiring-signals",
+  "title": "Company Jobs & Hiring Signals",
+  "description": "Open jobs and hiring signals for any company, from its public careers page or job board.",
+  "version": "0.1.5",
+  "websiteUrl": "https://apify.com/plainfold/company-hiring-signals",
   "repository": {
     "url": "https://github.com/plainfold/plainfold-mcp",
     "source": "github",
-    "id": "1409871838"
+    "id": "1409871838",
+    "subfolder": "servers/company-hiring-signals"
   },
   "icons": [
     {
@@ -22,7 +23,7 @@
   "remotes": [
     {
       "type": "streamable-http",
-      "url": "https://mcp.apify.com/?tools=plainfold/sam-gov-contract-opportunities,plainfold/business-entity-check,plainfold/company-hiring-signals,plainfold/sec-company-financials",
+      "url": "https://mcp.apify.com/?tools=plainfold/company-hiring-signals",
       "headers": [
         {
           "name": "Authorization",
