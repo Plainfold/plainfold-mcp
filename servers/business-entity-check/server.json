@@ -1,6 +1,6 @@
 {
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
-  "name": "io.github.plainfold/business-entity-check",
+  "name": "io.github.Plainfold/business-entity-check",
   "title": "US Business Entity Check",
   "description": "Verify a US company is registered and active from official state registry open data.",
   "version": "0.1.3",

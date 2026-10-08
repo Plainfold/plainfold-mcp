@@ -1,6 +1,6 @@
 {
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
-  "name": "io.github.plainfold/plainfold-mcp",
+  "name": "io.github.Plainfold/plainfold-mcp",
   "title": "Plainfold data tools (all tools)",
   "description": "Plainfold's data tools in one MCP server: SAM.gov federal contracts and US business entity checks.",
   "version": "1.0.0",

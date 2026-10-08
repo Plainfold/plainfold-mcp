@@ -1,6 +1,6 @@
 {
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
-  "name": "io.github.plainfold/sam-gov-contract-opportunities",
+  "name": "io.github.Plainfold/sam-gov-contract-opportunities",
   "title": "SAM.gov Contract Opportunities",
   "description": "Search U.S. federal contract opportunities (RFPs, bids, awards) from SAM.gov official data.",
   "version": "0.2.2",

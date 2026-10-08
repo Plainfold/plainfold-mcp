@@ -7,7 +7,7 @@
     "repo": "https://github.com/plainfold/plainfold-mcp",
     "apifyProfile": "https://apify.com/plainfold",
     "x": "https://x.com/plainfoldco",
-    "registryNamespace": "io.github.plainfold",
+    "registryNamespace": "io.github.Plainfold",
     "combined": {
       "slug": "plainfold-mcp",
       "title": "Plainfold data tools (all tools)",

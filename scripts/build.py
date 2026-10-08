@@ -263,7 +263,7 @@ def index_html():
 <li>Sign in with a free Apify account (OAuth), or send <code>Authorization: Bearer YOUR_APIFY_TOKEN</code>.</li>
 <li>Ask your question. Runs are billed per result at the prices above. Agents without an account can pay per use with x402 or Skyfire through Apify.</li>
 </ol>
-<p>Client-by-client setup, example calls and registry entries: <a href="{B["repo"]}">github.com/plainfold/plainfold-mcp</a>. Listed in the official <a href="https://registry.modelcontextprotocol.io/v0.1/servers?search=io.github.plainfold">MCP Registry</a> as <code>io.github.plainfold/*</code>.</p>
+<p>Client-by-client setup, example calls and registry entries: <a href="{B["repo"]}">github.com/plainfold/plainfold-mcp</a>. Listed in the official <a href="https://registry.modelcontextprotocol.io/v0.1/servers?search=io.github.Plainfold">MCP Registry</a> as <code>io.github.Plainfold/*</code>.</p>
 </div></section>
 <section id="guides" class="alt"><div class="wrap">
 <p class="kicker">Guides &amp; templates</p><h2>Practical guides</h2>
@@ -294,7 +294,7 @@ def llms_txt():
     for p in PRODUCTS:
         L.append(f'- [{p["name"]}]({p["url"]}): {p["summary"]} Price: ${p["price"]}.')
     L += ["", "## Optional", "",
-          f'- [MCP Registry entries](https://registry.modelcontextprotocol.io/v0.1/servers?search=io.github.plainfold): io.github.plainfold/*',
+          f'- [MCP Registry entries](https://registry.modelcontextprotocol.io/v0.1/servers?search=io.github.Plainfold): io.github.Plainfold/*',
           f'- [Apify profile]({B["apifyProfile"]})', f'- [GitHub]({B["github"]})', ""]
     return "\n".join(L)
 
