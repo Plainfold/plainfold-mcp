@@ -92,6 +92,7 @@ def readme():
     L.append("# Plainfold MCP tools\n")
     L.append(f'{B["tagline"]} Each tool runs on [Apify]({B["apifyProfile"]}) and is available to AI agents as a remote MCP server '
              "through Apify's hosted MCP endpoint. You pay per result, at the prices below. There's nothing to install or host.\n")
+    L.append('[![Listed on mcpservers.org](https://mcpservers.org/badge.svg)](https://mcpservers.org/servers/plainfold/plainfold-mcp)\n')
     L.append(f'Website: {B["site"]} · Machine-readable index: {B["site"]}/llms.txt\n')
     L.append("## Tools\n")
     L.append("| Tool | What it does | Price | MCP URL |\n|---|---|---|---|")

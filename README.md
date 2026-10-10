@@ -4,6 +4,8 @@
 
 Small, honest data tools for people and AI agents. Each tool runs on [Apify](https://apify.com/plainfold) and is available to AI agents as a remote MCP server through Apify's hosted MCP endpoint. You pay per result, at the prices below. There's nothing to install or host.
 
+[![Listed on mcpservers.org](https://mcpservers.org/badge.svg)](https://mcpservers.org/servers/plainfold/plainfold-mcp)
+
 Website: https://plainfold.github.io · Machine-readable index: https://plainfold.github.io/llms.txt
 
 ## Tools
